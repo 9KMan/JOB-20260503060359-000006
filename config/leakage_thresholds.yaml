@@ -1,0 +1,85 @@
+tenant_id: "default"
+
+rules:
+  R-01:
+    enabled: true
+    params:
+      min_discount_to_trigger: 0.05
+      lookback_periods: 12
+
+  R-02:
+    enabled: true
+    params:
+      min_bundle_discount: 0.10
+
+  R-03:
+    enabled: true
+    params:
+      lookback_periods: 12
+      min_cost_change_pct: 0.10
+
+  R-04:
+    enabled: true
+    params:
+      min_segment_discount: 0.15
+
+  R-05:
+    enabled: true
+    params:
+      min_clawback: 500
+
+  R-06:
+    enabled: true
+    params:
+      return_rate_threshold: 0.10
+      min_transaction_value: 1000
+
+  R-07:
+    enabled: true
+    params:
+      late_days_threshold: 30
+      min_open_invoice_value: 5000
+
+  R-08:
+    enabled: true
+    params:
+      min_credit_discount: 0.15
+
+  R-09:
+    enabled: true
+    params:
+      close_window_days: 30
+
+  R-10:
+    enabled: true
+    params:
+      volume_spike_multiplier: 1.50
+
+  R-11:
+    enabled: true
+    params:
+      return_rate_threshold: 0.15
+
+  R-12:
+    enabled: true
+    params:
+      max_margin_pct: 0.01
+
+  R-13:
+    enabled: true
+    params:
+      min_margin_shift_pct: 0.10
+
+  R-14:
+    enabled: true
+    params:
+      promo_frequency_threshold: 0.70
+      min_promo_discount: 0.15
+
+segments:
+  enterprise: ["Enterprise", "Enterprise A", "Enterprise B"]
+  midmarket: ["Mid-Market", "MidMarket", "Mid-Market A"]
+
+priorities:
+  quick_win_threshold: 0.75
+  nice_to_have_threshold: 0.50
