@@ -1,0 +1,15 @@
+Dear [Client Name],
+
+I read your RFP carefully — the vision of democratizing Revenue Management technology for underserved LATAM mid-market companies resonates strongly. The Pricing Diagnostic Tool you're building addresses a real gap, and the structured approach (Sprints 2→4→5) with clear phase gates is exactly how mature data products should be built.
+
+I'm applying for Option B (Complete) because the architectural patterns you require — tenant_id everywhere, core/app separation, SQLAlchemy ORM — only make economic sense at scale. Building Option A Lite and then retrofitting those patterns would cost more than just doing it right the first time.
+
+On the pocket waterfall question: I understand that post-invoice rebates are retrospective, and the key is to track each adjustment's stage (invoice vs. post_invoice) in a transaction ledger. Invoice discounts reduce price at sale; retro rebates reduce pocket margin at period close. These must never be conflated.
+
+I've built similar data products: a B2B analytics pipeline that ingested messy Excel exports, applied business rule validation, and surfaced actionable insights via Streamlit — including branded Excel report generation. The PDF specs and synthetic dataset you provide mean we're implementing well-defined rules, not inventing methodology from scratch.
+
+I'm targeting 20-25 hrs/week, available for your LATAM morning sync calls. The first milestone (Sprint 2) as a paid trial works well for both parties.
+
+Looking forward to reviewing the detailed RFP.
+
+Best regards,
